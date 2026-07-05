@@ -44,7 +44,7 @@ The React frontend dynamically consumes this data through the standard WP REST A
 
 ### 3. Custom PHP API & Form Management (Kontaktanfragen)
 Heavy reliance on external form plugins (like Contact Form 7 or WPForms) has been completely eliminated. 
-- Developed a completely custom, lightweight PHP plugin from scratch (`backend-plugin/henning-contact-api.php`).
+- Developed a completely custom, lightweight PHP plugin from scratch (`backend/custom-contact-form.php`).
 - It registers a secure, custom POST endpoint to the WordPress REST API: `wp-json/custom/v1/contact`.
 - When a user submits the lead generation / acquisition form (*Ankauf Form*) on the React frontend, the payload is securely POSTed here.
 - The custom PHP logic handles **server-side data validation, sanitization, and security checks**, including verifying the mandatory GDPR/Datenschutz compliance checkbox.
