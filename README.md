@@ -1,5 +1,10 @@
 # Full-Stack Headless CMS Portfolio Project
 
+🚀 **Live Demo:** [https://web-makers-demo-1ynt.vercel.app/](https://web-makers-demo-1ynt.vercel.app/)
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+...
+
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
 ![Pantheon](https://img.shields.io/badge/Pantheon-F2E52F.svg?style=for-the-badge&logo=Pantheon&logoColor=black)
