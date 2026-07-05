@@ -1,0 +1,63 @@
+@import "tailwindcss";
+/* Swiper'ın dışarı taşan okları görmesi için genel alanı rahatlatıyoruz */
+.mySwiper {
+  position: relative;
+}
+
+/* OKLARIN ORTAK YENİ POZİSYONU */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  top: 40% !important; /* Okları dikeyde tam fotoğrafın ortasına hizalar (Yazının üstünde kalır) */
+  
+  
+  width: 45px;
+  height: 45px;
+  
+  transition: all 0.3s ease;
+}
+
+/* Okların içindeki ikonları biraz küçültüyoruz ki kibar dursun */
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+.mySwiper .swiper-button-prev {
+    left: -10% !important; 
+  }
+  .mySwiper .swiper-button-next{
+    right: -10% !important;
+  }
+
+
+/* Slaytlar 3'lü dizildiğinde aktif olanın sağına ve soluna okları çakıyoruz */
+@media (min-width: 768px) {
+  /* Sol oku aktif slaytın tam sol sınırına çeker */
+  .mySwiper .swiper-button-prev {
+    left: 30% !important; 
+  }
+
+  /* Sağ oku aktif slaytın tam sağ sınırına çeker */
+  .mySwiper .swiper-button-next {
+    right: 30% !important;
+  }
+}
+
+/* Hover Efekti */
+.mySwiper .swiper-button-next:hover,
+.mySwiper .swiper-button-prev:hover {
+
+  transform: scale(1.10);
+}
+
+@theme{
+  --color-navbar : #141516;
+  --color-darkSec : #18181C;
+  --color-darkText : #404044;
+  
+}
+html {
+  overflow-y: scroll; /* Eskiden beri çalışan klasik yöntem */
+  /* VEYA modern tarayıcılar için: */
+  scrollbar-gutter: stable; 
+}

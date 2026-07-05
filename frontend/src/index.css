@@ -1,0 +1,14 @@
+/* Önce tüm slaytları varsayılan olarak küçültüyoruz ve soluklaştırıyoruz */
+.swiper-slide .custom-slide {
+  transform: scale(0.85);
+  opacity: 0.4;
+  
+}
+
+/* Sadece ortadaki (aktif) slaytı normal boyutuna ve tam opaklığa getiriyoruz */
+.swiper-slide-active .custom-slide {
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0px);
+  
+}
